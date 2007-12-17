@@ -11,7 +11,6 @@ Group:        	Sound
 URL:          	http://quitte.de/dsp/caps.html
 Source0:      	%{name}-%{version}.tar.bz2
 #Patch0:		%name.patch.bz2
-BuildRoot:    	%{_tmppath}/%{name}-buildroot
 
 %description
 caps, the C* Audio Plugin Suite, is a collection of refined LADSPA
