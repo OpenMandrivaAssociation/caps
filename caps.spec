@@ -23,7 +23,7 @@ oscillation, reverb, equalization and more.
 %setup -q
 
 %build
-%make CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" DEST=%{_libdir}/ladspa RDFDEST=%{_datadir}/ladspa/rdf
+%make CFLAGS="%{optflags} -fPIC" CXXFLAGS="%{optflags} -fPIC" DEST=%{_libdir}/ladspa RDFDEST=%{_datadir}/ladspa/rdf
 									
 %install
 %makeinstall DEST=%{buildroot}/%{_libdir}/ladspa RDFDEST=%{buildroot}%{_datadir}/ladspa/rdf
