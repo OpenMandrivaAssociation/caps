@@ -1,6 +1,8 @@
+%define debug_package          %{nil}
+
 Name: 	 	caps
 Version: 	0.4.2
-Release: 	%{mkrel 2}
+Release: 	3
 Summary: 	Collection of plugins for LADSPA
 URL:		http://quitte.de/dsp/
 License:	GPLv2+
