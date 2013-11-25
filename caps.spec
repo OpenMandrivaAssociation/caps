@@ -1,14 +1,13 @@
 %define debug_package          %{nil}
 
 Name: 	 	caps
-Version: 	0.4.2
-Release: 	3
+Version: 	0.9.7
+Release: 	1
 Summary: 	Collection of plugins for LADSPA
 URL:		http://quitte.de/dsp/
 License:	GPLv2+
 Group:		Sound
-Source0:	http://quitte.de/dsp/%{name}_%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+Source0:	http://quitte.de/dsp/caps_0.9.7.tar.bz2
 BuildRequires:	ladspa-devel
 Requires:	ladspa
 Obsoletes:	ladspa-quitte-dsp
@@ -31,10 +30,8 @@ oscillation, reverb, equalization and more.
 %makeinstall DEST=%{buildroot}/%{_libdir}/ladspa RDFDEST=%{buildroot}%{_datadir}/ladspa/rdf
 
 %clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc CHANGES README
 %{_libdir}/ladspa/%{name}.so
 %{_datadir}/ladspa/rdf/%{name}.rdf
@@ -84,3 +81,4 @@ rm -rf %{buildroot}
 
 * Sat May 8 2004 Austin Acton <austin@mandrake.org> 0.1.11-1mdk
 - initial package
+
