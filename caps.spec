@@ -2,7 +2,7 @@
 
 Name: 	 	caps
 Version: 	0.9.7
-Release: 	2
+Release: 	3
 Summary: 	Collection of plugins for LADSPA
 URL:		http://quitte.de/dsp/
 License:	GPLv2+
